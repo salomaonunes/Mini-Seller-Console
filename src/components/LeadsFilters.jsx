@@ -17,10 +17,10 @@ const LeadsFilters = ({ filters, onFiltersChange, sort, onSortChange }) => {
   ];
 
   return (
-    <div className="bg-white p-4 border-b border-gray-200">
-      <div className="flex flex-col sm:flex-row gap-4">
+    <div className="bg-white p-3 sm:p-4 border-b border-gray-200">
+      <div className="flex flex-col gap-3 sm:gap-4">
         {/* Search */}
-        <div className="flex-1">
+        <div className="w-full">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
             <input
@@ -28,57 +28,63 @@ const LeadsFilters = ({ filters, onFiltersChange, sort, onSortChange }) => {
               placeholder="Search by name or company..."
               value={filters.search}
               onChange={(e) => onFiltersChange({ search: e.target.value })}
-              className="input-field pl-10"
+              className="input-field pl-10 w-full"
             />
           </div>
         </div>
 
-        {/* Status Filter */}
-        <div className="sm:w-48">
-          <div className="relative">
-            <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-            <select
-              value={filters.status}
-              onChange={(e) => onFiltersChange({ status: e.target.value })}
-              className="input-field pl-10 appearance-none"
-            >
-              {statusOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
+        {/* Filters Row */}
+        <div className="flex flex-col xs:flex-row gap-3 xs:gap-4">
+          {/* Status Filter */}
+          <div className="flex-1 xs:flex-none xs:w-48">
+            <div className="relative">
+              <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <select
+                value={filters.status}
+                onChange={(e) => onFiltersChange({ status: e.target.value })}
+                className="input-field pl-10 appearance-none w-full"
+              >
+                {statusOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
-        </div>
 
-        {/* Sort */}
-        <div className="sm:w-48">
-          <div className="flex gap-2">
-            <select
-              value={sort.field}
-              onChange={(e) => onSortChange({ ...sort, field: e.target.value })}
-              className="input-field flex-1"
-            >
-              {sortOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  Sort by {option.label}
-                </option>
-              ))}
-            </select>
-            <button
-              onClick={() =>
-                onSortChange({
-                  ...sort,
-                  direction: sort.direction === "asc" ? "desc" : "asc",
-                })
-              }
-              className="btn-secondary px-3"
-              title={`Sort ${
-                sort.direction === "asc" ? "Descending" : "Ascending"
-              }`}
-            >
-              {sort.direction === "asc" ? "↑" : "↓"}
-            </button>
+          {/* Sort */}
+          <div className="flex-1 xs:flex-none xs:w-48">
+            <div className="flex gap-2">
+              <select
+                value={sort.field}
+                onChange={(e) =>
+                  onSortChange({ ...sort, field: e.target.value })
+                }
+                className="input-field flex-1 text-sm"
+              >
+                {sortOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    <span className="hidden sm:inline">Sort by </span>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+              <button
+                onClick={() =>
+                  onSortChange({
+                    ...sort,
+                    direction: sort.direction === "asc" ? "desc" : "asc",
+                  })
+                }
+                className="btn-secondary px-3 min-w-[44px] flex items-center justify-center"
+                title={`Sort ${
+                  sort.direction === "asc" ? "Descending" : "Ascending"
+                }`}
+              >
+                {sort.direction === "asc" ? "↑" : "↓"}
+              </button>
+            </div>
           </div>
         </div>
       </div>

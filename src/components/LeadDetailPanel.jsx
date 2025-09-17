@@ -108,23 +108,23 @@ const LeadDetailPanel = ({
         onClick={onClose}
       />
 
-      <div className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-xl">
+      <div className="absolute right-0 top-0 h-full w-full max-w-md sm:max-w-md bg-white shadow-xl">
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="text-lg font-semibold text-gray-900">
+          <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-200">
+            <h2 className="text-base sm:text-lg font-semibold text-gray-900">
               Lead Details
             </h2>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 transition-colors"
+              className="text-gray-400 hover:text-gray-600 transition-colors p-1"
             >
-              <X className="w-6 h-6" />
+              <X className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           </div>
 
           {/* Content */}
-          <div className="flex-1 overflow-y-auto p-6">
+          <div className="flex-1 overflow-y-auto p-4 sm:p-6">
             <div className="space-y-6">
               {/* Name */}
               <div>
@@ -277,36 +277,41 @@ const LeadDetailPanel = ({
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-200 p-6">
+          <div className="border-t border-gray-200 p-4 sm:p-6">
             <div className="flex flex-col gap-3">
               {/* Convert to Opportunity Button */}
               <button
                 onClick={() => onConvertToOpportunity(lead)}
                 disabled={isConverting}
-                className="btn-primary flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn-primary flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
               >
                 {isConverting ? (
                   <LoadingSpinner size="sm" />
                 ) : (
                   <ExternalLink className="w-4 h-4" />
                 )}
-                {isConverting ? "Converting..." : "Convert to Opportunity"}
+                <span className="hidden xs:inline">
+                  {isConverting ? "Converting..." : "Convert to Opportunity"}
+                </span>
+                <span className="xs:hidden">
+                  {isConverting ? "Converting..." : "Convert"}
+                </span>
               </button>
 
               {/* Edit/Save/Cancel Buttons */}
               {!isEditing ? (
                 <button
                   onClick={() => setIsEditing(true)}
-                  className="btn-secondary"
+                  className="btn-secondary text-sm"
                 >
                   Edit Lead
                 </button>
               ) : (
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <button
                     onClick={handleSave}
                     disabled={isSaving}
-                    className="btn-primary flex-1 flex items-center justify-center gap-2 disabled:opacity-50"
+                    className="btn-primary flex-1 flex items-center justify-center gap-2 disabled:opacity-50 text-sm"
                   >
                     {isSaving ? (
                       <LoadingSpinner size="sm" />
@@ -318,7 +323,7 @@ const LeadDetailPanel = ({
                   <button
                     onClick={handleCancel}
                     disabled={isSaving}
-                    className="btn-secondary flex items-center justify-center gap-2 disabled:opacity-50"
+                    className="btn-secondary flex items-center justify-center gap-2 disabled:opacity-50 text-sm"
                   >
                     <RotateCcw className="w-4 h-4" />
                     Cancel

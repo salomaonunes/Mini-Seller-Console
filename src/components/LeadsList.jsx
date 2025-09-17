@@ -39,7 +39,8 @@ const LeadsList = ({ leads, onLeadSelect, selectedLeadId }) => {
 
   return (
     <div className="flex-1 overflow-auto">
-      <div className="min-w-full">
+      {/* Desktop Table View */}
+      <div className="hidden md:block min-w-full">
         {/* Table Header */}
         <div className="bg-gray-50 border-b border-gray-200">
           <div className="grid grid-cols-12 gap-4 px-6 py-3 text-sm font-medium text-gray-500 uppercase tracking-wider">
@@ -105,6 +106,70 @@ const LeadsList = ({ leads, onLeadSelect, selectedLeadId }) => {
                 >
                   {lead.status}
                 </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Card View */}
+      <div className="md:hidden">
+        <div className="divide-y divide-gray-200">
+          {leads.map((lead) => (
+            <div
+              key={lead.id}
+              onClick={() => onLeadSelect(lead)}
+              className={`p-4 hover:bg-gray-50 cursor-pointer transition-colors duration-150 ${
+                selectedLeadId === lead.id
+                  ? "bg-primary-50 border-l-4 border-primary-500"
+                  : ""
+              }`}
+            >
+              {/* Header with Name and Status */}
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm font-medium text-gray-900 truncate">
+                    {lead.name}
+                  </h3>
+                  <p className="text-xs text-gray-500 truncate">
+                    {lead.company}
+                  </p>
+                </div>
+                <div className="ml-3 flex-shrink-0">
+                  <span
+                    className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(
+                      lead.status
+                    )}`}
+                  >
+                    {lead.status}
+                  </span>
+                </div>
+              </div>
+
+              {/* Details */}
+              <div className="space-y-2">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Mail className="w-4 h-4 mr-2 text-gray-400 flex-shrink-0" />
+                  <span className="truncate">{lead.email}</span>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Building className="w-4 h-4 mr-2 text-gray-400 flex-shrink-0" />
+                    <span className="truncate">{lead.source}</span>
+                  </div>
+
+                  <div className="flex items-center text-sm">
+                    <Star
+                      className={`w-4 h-4 mr-1 ${getScoreColor(lead.score)}`}
+                    />
+                    <span
+                      className={`font-medium ${getScoreColor(lead.score)}`}
+                    >
+                      {lead.score}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

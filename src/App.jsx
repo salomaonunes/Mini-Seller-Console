@@ -74,40 +74,44 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+      <header className="bg-white shadow-sm border-b border-gray-200 flex-shrink-0">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between h-auto sm:h-16 py-3 sm:py-0 gap-3 sm:gap-0">
             <div className="flex items-center">
-              <h1 className="text-xl font-semibold text-gray-900">
+              <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
                 Mini Seller Console
               </h1>
             </div>
 
             {/* Tab Navigation */}
-            <div className="flex space-x-1 bg-gray-100 rounded-lg p-1">
+            <div className="flex w-full sm:w-auto space-x-1 bg-gray-100 rounded-lg p-1">
               <button
                 onClick={() => setActiveTab("leads")}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${
                   activeTab === "leads"
                     ? "bg-white text-gray-900 shadow-sm"
                     : "text-gray-600 hover:text-gray-900"
                 }`}
               >
-                <Users className="w-4 h-4 inline mr-2" />
-                Leads ({leads.length})
+                <Users className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1 sm:mr-2" />
+                <span className="hidden xs:inline">Leads</span>
+                <span className="xs:hidden">L</span>
+                <span className="ml-1">({leads.length})</span>
               </button>
               <button
                 onClick={() => setActiveTab("opportunities")}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${
                   activeTab === "opportunities"
                     ? "bg-white text-gray-900 shadow-sm"
                     : "text-gray-600 hover:text-gray-900"
                 }`}
               >
-                <Briefcase className="w-4 h-4 inline mr-2" />
-                Opportunities ({opportunities.length})
+                <Briefcase className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1 sm:mr-2" />
+                <span className="hidden xs:inline">Opportunities</span>
+                <span className="xs:hidden">O</span>
+                <span className="ml-1">({opportunities.length})</span>
               </button>
             </div>
           </div>
@@ -115,11 +119,11 @@ function App() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-4 overflow-y-auto">
         {activeTab === "leads" ? (
-          <div className="space-y-6">
+          <div className="h-full flex flex-col">
             {/* Leads Section */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 flex-1 flex flex-col">
               {/* Filters */}
               <LeadsFilters
                 filters={filters}
@@ -129,7 +133,7 @@ function App() {
               />
 
               {/* Content */}
-              <div className="h-96">
+              <div className="flex-1 overflow-y-auto">
                 {leadsLoading ? (
                   <div className="flex items-center justify-center h-full">
                     <LoadingSpinner size="lg" />
@@ -157,21 +161,25 @@ function App() {
             </div>
           </div>
         ) : (
-          <div className="space-y-6">
+          <div className="h-full flex flex-col">
             {/* Opportunities Section */}
-            {opportunitiesLoading ? (
-              <div className="flex items-center justify-center h-64">
-                <LoadingSpinner size="lg" />
-              </div>
-            ) : opportunitiesError ? (
-              <ErrorState
-                title="Failed to load opportunities"
-                message={opportunitiesError}
-                onRetry={clearOpportunitiesError}
-              />
-            ) : (
-              <OpportunitiesList opportunities={opportunities} />
-            )}
+            <div className="flex-1 overflow-y-auto">
+              {opportunitiesLoading ? (
+                <div className="flex items-center justify-center h-full">
+                  <LoadingSpinner size="lg" />
+                </div>
+              ) : opportunitiesError ? (
+                <div className="h-full flex items-center justify-center">
+                  <ErrorState
+                    title="Failed to load opportunities"
+                    message={opportunitiesError}
+                    onRetry={clearOpportunitiesError}
+                  />
+                </div>
+              ) : (
+                <OpportunitiesList opportunities={opportunities} />
+              )}
+            </div>
           </div>
         )}
       </main>
