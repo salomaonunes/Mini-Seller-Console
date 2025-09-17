@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "name": "João Silva",
+    "company": "TechCorp Solutions",
+    "email": "joao.silva@techcorp.com",
+    "source": "Website",
+    "score": 95,
+    "status": "New"
+  },
+  {
+    "id": 2,
+    "name": "Maria Santos",
+    "company": "Inovação Digital",
+    "email": "maria@inovacaodigital.com.br",
+    "source": "Referral",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 3,
+    "name": "Pedro Oliveira",
+    "company": "StartupXYZ",
+    "email": "pedro.oliveira@startupxyz.com",
+    "source": "LinkedIn",
+    "score": 92,
+    "status": "Qualified"
+  },
+  {
+    "id": 4,
+    "name": "Ana Costa",
+    "company": "Empresa ABC",
+    "email": "ana.costa@empresaabc.com",
+    "source": "Email Campaign",
+    "score": 76,
+    "status": "New"
+  },
+  {
+    "id": 5,
+    "name": "Carlos Mendes",
+    "company": "TechStart",
+    "email": "carlos@techstart.io",
+    "source": "Website",
+    "score": 89,
+    "status": "Contacted"
+  },
+  {
+    "id": 6,
+    "name": "Fernanda Lima",
+    "company": "Digital Solutions",
+    "email": "fernanda.lima@digitalsolutions.com",
+    "source": "Referral",
+    "score": 94,
+    "status": "Qualified"
+  },
+  {
+    "id": 7,
+    "name": "Roberto Alves",
+    "company": "Inovação Tech",
+    "email": "roberto@inovacaotech.com.br",
+    "source": "LinkedIn",
+    "score": 81,
+    "status": "New"
+  },
+  {
+    "id": 8,
+    "name": "Juliana Pereira",
+    "company": "StartupHub",
+    "email": "juliana.pereira@startuphub.com",
+    "source": "Website",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 9,
+    "name": "Marcos Ferreira",
+    "company": "TechInnovation",
+    "email": "marcos@techinnovation.com",
+    "source": "Email Campaign",
+    "score": 93,
+    "status": "Qualified"
+  },
+  {
+    "id": 10,
+    "name": "Patricia Souza",
+    "company": "Digital Corp",
+    "email": "patricia.souza@digitalcorp.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 11,
+    "name": "Rafael Martins",
+    "company": "TechForward",
+    "email": "rafael@techforward.io",
+    "source": "LinkedIn",
+    "score": 90,
+    "status": "Contacted"
+  },
+  {
+    "id": 12,
+    "name": "Camila Rodrigues",
+    "company": "Innovation Labs",
+    "email": "camila@innovationlabs.com",
+    "source": "Website",
+    "score": 78,
+    "status": "New"
+  },
+  {
+    "id": 13,
+    "name": "Diego Silva",
+    "company": "StartupTech",
+    "email": "diego.silva@startuptech.com",
+    "source": "Email Campaign",
+    "score": 91,
+    "status": "Qualified"
+  },
+  {
+    "id": 14,
+    "name": "Larissa Costa",
+    "company": "Digital Innovation",
+    "email": "larissa@digitalinnovation.com.br",
+    "source": "Referral",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 15,
+    "name": "Thiago Oliveira",
+    "company": "TechSolutions",
+    "email": "thiago@techsolutions.com",
+    "source": "LinkedIn",
+    "score": 84,
+    "status": "New"
+  },
+  {
+    "id": 16,
+    "name": "Beatriz Santos",
+    "company": "Innovation Hub",
+    "email": "beatriz@innovationhub.io",
+    "source": "Website",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 17,
+    "name": "Gabriel Lima",
+    "company": "TechStartup",
+    "email": "gabriel@techstartup.com",
+    "source": "Email Campaign",
+    "score": 92,
+    "status": "Qualified"
+  },
+  {
+    "id": 18,
+    "name": "Isabela Alves",
+    "company": "Digital Ventures",
+    "email": "isabela@digitalventures.com",
+    "source": "Referral",
+    "score": 79,
+    "status": "New"
+  },
+  {
+    "id": 19,
+    "name": "Lucas Pereira",
+    "company": "TechCorp",
+    "email": "lucas@techcorp.com.br",
+    "source": "LinkedIn",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 20,
+    "name": "Mariana Ferreira",
+    "company": "Innovation Tech",
+    "email": "mariana@innovationtech.com",
+    "source": "Website",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 21,
+    "name": "André Souza",
+    "company": "StartupLab",
+    "email": "andre@startuplab.io",
+    "source": "Email Campaign",
+    "score": 83,
+    "status": "New"
+  },
+  {
+    "id": 22,
+    "name": "Natália Martins",
+    "company": "TechInnovation",
+    "email": "natalia@techinnovation.com",
+    "source": "Referral",
+    "score": 90,
+    "status": "Contacted"
+  },
+  {
+    "id": 23,
+    "name": "Felipe Rodrigues",
+    "company": "Digital Solutions",
+    "email": "felipe@digitalsolutions.com.br",
+    "source": "LinkedIn",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 24,
+    "name": "Amanda Silva",
+    "company": "TechForward",
+    "email": "amanda@techforward.com",
+    "source": "Website",
+    "score": 91,
+    "status": "Qualified"
+  },
+  {
+    "id": 25,
+    "name": "Bruno Costa",
+    "company": "Innovation Labs",
+    "email": "bruno@innovationlabs.io",
+    "source": "Email Campaign",
+    "score": 77,
+    "status": "New"
+  },
+  {
+    "id": 26,
+    "name": "Carolina Oliveira",
+    "company": "StartupTech",
+    "email": "carolina@startuptech.com",
+    "source": "Referral",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 27,
+    "name": "Daniel Santos",
+    "company": "Digital Innovation",
+    "email": "daniel@digitalinnovation.com",
+    "source": "LinkedIn",
+    "score": 93,
+    "status": "Qualified"
+  },
+  {
+    "id": 28,
+    "name": "Eduarda Lima",
+    "company": "TechSolutions",
+    "email": "eduarda@techsolutions.com.br",
+    "source": "Website",
+    "score": 82,
+    "status": "New"
+  },
+  {
+    "id": 29,
+    "name": "Fábio Alves",
+    "company": "Innovation Hub",
+    "email": "fabio@innovationhub.com",
+    "source": "Email Campaign",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 30,
+    "name": "Gabriela Pereira",
+    "company": "TechStartup",
+    "email": "gabriela@techstartup.io",
+    "source": "Referral",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 31,
+    "name": "Henrique Ferreira",
+    "company": "Digital Ventures",
+    "email": "henrique@digitalventures.com",
+    "source": "LinkedIn",
+    "score": 80,
+    "status": "New"
+  },
+  {
+    "id": 32,
+    "name": "Ingrid Souza",
+    "company": "TechCorp",
+    "email": "ingrid@techcorp.com",
+    "source": "Website",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 33,
+    "name": "João Martins",
+    "company": "Innovation Tech",
+    "email": "joao.martins@innovationtech.com.br",
+    "source": "Email Campaign",
+    "score": 92,
+    "status": "Qualified"
+  },
+  {
+    "id": 34,
+    "name": "Karina Rodrigues",
+    "company": "StartupLab",
+    "email": "karina@startuplab.com",
+    "source": "Referral",
+    "score": 84,
+    "status": "New"
+  },
+  {
+    "id": 35,
+    "name": "Leandro Silva",
+    "company": "TechInnovation",
+    "email": "leandro@techinnovation.io",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 36,
+    "name": "Mônica Costa",
+    "company": "Digital Solutions",
+    "email": "monica@digitalsolutions.com",
+    "source": "Website",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 37,
+    "name": "Nelson Oliveira",
+    "company": "TechForward",
+    "email": "nelson@techforward.com.br",
+    "source": "Email Campaign",
+    "score": 81,
+    "status": "New"
+  },
+  {
+    "id": 38,
+    "name": "Olívia Santos",
+    "company": "Innovation Labs",
+    "email": "olivia@innovationlabs.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "Contacted"
+  },
+  {
+    "id": 39,
+    "name": "Paulo Lima",
+    "company": "StartupTech",
+    "email": "paulo@startuptech.io",
+    "source": "LinkedIn",
+    "score": 91,
+    "status": "Qualified"
+  },
+  {
+    "id": 40,
+    "name": "Quésia Alves",
+    "company": "Digital Innovation",
+    "email": "quesia@digitalinnovation.com",
+    "source": "Website",
+    "score": 78,
+    "status": "New"
+  },
+  {
+    "id": 41,
+    "name": "Ricardo Pereira",
+    "company": "TechSolutions",
+    "email": "ricardo@techsolutions.com.br",
+    "source": "Email Campaign",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 42,
+    "name": "Sandra Ferreira",
+    "company": "Innovation Hub",
+    "email": "sandra@innovationhub.com",
+    "source": "Referral",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 43,
+    "name": "Tiago Souza",
+    "company": "TechStartup",
+    "email": "tiago@techstartup.com",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "New"
+  },
+  {
+    "id": 44,
+    "name": "Úrsula Martins",
+    "company": "Digital Ventures",
+    "email": "ursula@digitalventures.io",
+    "source": "Website",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 45,
+    "name": "Vitor Rodrigues",
+    "company": "TechCorp",
+    "email": "vitor@techcorp.com",
+    "source": "Email Campaign",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 46,
+    "name": "Wanessa Silva",
+    "company": "Innovation Tech",
+    "email": "wanessa@innovationtech.com.br",
+    "source": "Referral",
+    "score": 79,
+    "status": "New"
+  },
+  {
+    "id": 47,
+    "name": "Xavier Costa",
+    "company": "StartupLab",
+    "email": "xavier@startuplab.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 48,
+    "name": "Yasmin Oliveira",
+    "company": "TechInnovation",
+    "email": "yasmin@techinnovation.io",
+    "source": "Website",
+    "score": 92,
+    "status": "Qualified"
+  },
+  {
+    "id": 49,
+    "name": "Zeca Santos",
+    "company": "Digital Solutions",
+    "email": "zeca@digitalsolutions.com",
+    "source": "Email Campaign",
+    "score": 82,
+    "status": "New"
+  },
+  {
+    "id": 50,
+    "name": "Alice Lima",
+    "company": "TechForward",
+    "email": "alice@techforward.com.br",
+    "source": "Referral",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 51,
+    "name": "Bernardo Alves",
+    "company": "Innovation Labs",
+    "email": "bernardo@innovationlabs.com",
+    "source": "LinkedIn",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 52,
+    "name": "Cecília Pereira",
+    "company": "StartupTech",
+    "email": "cecilia@startuptech.io",
+    "source": "Website",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 53,
+    "name": "Davi Ferreira",
+    "company": "Digital Innovation",
+    "email": "davi@digitalinnovation.com",
+    "source": "Email Campaign",
+    "score": 91,
+    "status": "Contacted"
+  },
+  {
+    "id": 54,
+    "name": "Elisa Souza",
+    "company": "TechSolutions",
+    "email": "elisa@techsolutions.com.br",
+    "source": "Referral",
+    "score": 80,
+    "status": "New"
+  },
+  {
+    "id": 55,
+    "name": "Felipe Martins",
+    "company": "Innovation Hub",
+    "email": "felipe.martins@innovationhub.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 56,
+    "name": "Giovanna Rodrigues",
+    "company": "TechStartup",
+    "email": "giovanna@techstartup.com",
+    "source": "Website",
+    "score": 93,
+    "status": "Qualified"
+  },
+  {
+    "id": 57,
+    "name": "Hugo Silva",
+    "company": "Digital Ventures",
+    "email": "hugo@digitalventures.io",
+    "source": "Email Campaign",
+    "score": 77,
+    "status": "New"
+  },
+  {
+    "id": 58,
+    "name": "Iris Costa",
+    "company": "TechCorp",
+    "email": "iris@techcorp.com",
+    "source": "Referral",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 59,
+    "name": "João Pedro Oliveira",
+    "company": "Innovation Tech",
+    "email": "joaopedro@innovationtech.com.br",
+    "source": "LinkedIn",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 60,
+    "name": "Kauê Santos",
+    "company": "StartupLab",
+    "email": "kaue@startuplab.com",
+    "source": "Website",
+    "score": 84,
+    "status": "New"
+  },
+  {
+    "id": 61,
+    "name": "Lara Lima",
+    "company": "TechInnovation",
+    "email": "lara@techinnovation.io",
+    "source": "Email Campaign",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 62,
+    "name": "Miguel Alves",
+    "company": "Digital Solutions",
+    "email": "miguel@digitalsolutions.com",
+    "source": "Referral",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 63,
+    "name": "Nina Pereira",
+    "company": "TechForward",
+    "email": "nina@techforward.com.br",
+    "source": "LinkedIn",
+    "score": 81,
+    "status": "New"
+  },
+  {
+    "id": 64,
+    "name": "Otávio Ferreira",
+    "company": "Innovation Labs",
+    "email": "otavio@innovationlabs.com",
+    "source": "Website",
+    "score": 85,
+    "status": "Contacted"
+  },
+  {
+    "id": 65,
+    "name": "Pietra Souza",
+    "company": "StartupTech",
+    "email": "pietra@startuptech.io",
+    "source": "Email Campaign",
+    "score": 92,
+    "status": "Qualified"
+  },
+  {
+    "id": 66,
+    "name": "Ravi Martins",
+    "company": "Digital Innovation",
+    "email": "ravi@digitalinnovation.com",
+    "source": "Referral",
+    "score": 78,
+    "status": "New"
+  },
+  {
+    "id": 67,
+    "name": "Sophia Rodrigues",
+    "company": "TechSolutions",
+    "email": "sophia@techsolutions.com.br",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 68,
+    "name": "Theo Silva",
+    "company": "Innovation Hub",
+    "email": "theo@innovationhub.com",
+    "source": "Website",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 69,
+    "name": "Valentina Costa",
+    "company": "TechStartup",
+    "email": "valentina@techstartup.io",
+    "source": "Email Campaign",
+    "score": 83,
+    "status": "New"
+  },
+  {
+    "id": 70,
+    "name": "William Oliveira",
+    "company": "Digital Ventures",
+    "email": "william@digitalventures.com",
+    "source": "Referral",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 71,
+    "name": "Yara Santos",
+    "company": "TechCorp",
+    "email": "yara@techcorp.com.br",
+    "source": "LinkedIn",
+    "score": 91,
+    "status": "Qualified"
+  },
+  {
+    "id": 72,
+    "name": "Zion Lima",
+    "company": "Innovation Tech",
+    "email": "zion@innovationtech.com",
+    "source": "Website",
+    "score": 79,
+    "status": "New"
+  },
+  {
+    "id": 73,
+    "name": "Ayla Alves",
+    "company": "StartupLab",
+    "email": "ayla@startuplab.io",
+    "source": "Email Campaign",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 74,
+    "name": "Bento Pereira",
+    "company": "TechInnovation",
+    "email": "bento@techinnovation.com",
+    "source": "Referral",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 75,
+    "name": "Cora Ferreira",
+    "company": "Digital Solutions",
+    "email": "cora@digitalsolutions.com.br",
+    "source": "LinkedIn",
+    "score": 82,
+    "status": "New"
+  },
+  {
+    "id": 76,
+    "name": "Dante Souza",
+    "company": "TechForward",
+    "email": "dante@techforward.com",
+    "source": "Website",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 77,
+    "name": "Emma Martins",
+    "company": "Innovation Labs",
+    "email": "emma@innovationlabs.io",
+    "source": "Email Campaign",
+    "score": 93,
+    "status": "Qualified"
+  },
+  {
+    "id": 78,
+    "name": "Finn Rodrigues",
+    "company": "StartupTech",
+    "email": "finn@startuptech.com",
+    "source": "Referral",
+    "score": 80,
+    "status": "New"
+  },
+  {
+    "id": 79,
+    "name": "Grace Silva",
+    "company": "Digital Innovation",
+    "email": "grace@digitalinnovation.com.br",
+    "source": "LinkedIn",
+    "score": 85,
+    "status": "Contacted"
+  },
+  {
+    "id": 80,
+    "name": "Henry Costa",
+    "company": "TechSolutions",
+    "email": "henry@techsolutions.com",
+    "source": "Website",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 81,
+    "name": "Ivy Oliveira",
+    "company": "Innovation Hub",
+    "email": "ivy@innovationhub.io",
+    "source": "Email Campaign",
+    "score": 76,
+    "status": "New"
+  },
+  {
+    "id": 82,
+    "name": "Jack Santos",
+    "company": "TechStartup",
+    "email": "jack@techstartup.com",
+    "source": "Referral",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 83,
+    "name": "Kira Lima",
+    "company": "Digital Ventures",
+    "email": "kira@digitalventures.com.br",
+    "source": "LinkedIn",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 84,
+    "name": "Leo Alves",
+    "company": "TechCorp",
+    "email": "leo@techcorp.com",
+    "source": "Website",
+    "score": 84,
+    "status": "New"
+  },
+  {
+    "id": 85,
+    "name": "Maya Pereira",
+    "company": "Innovation Tech",
+    "email": "maya@innovationtech.io",
+    "source": "Email Campaign",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 86,
+    "name": "Noah Ferreira",
+    "company": "StartupLab",
+    "email": "noah@startuplab.com",
+    "source": "Referral",
+    "score": 91,
+    "status": "Qualified"
+  },
+  {
+    "id": 87,
+    "name": "Olivia Souza",
+    "company": "TechInnovation",
+    "email": "olivia.souza@techinnovation.com",
+    "source": "LinkedIn",
+    "score": 78,
+    "status": "New"
+  },
+  {
+    "id": 88,
+    "name": "Parker Martins",
+    "company": "Digital Solutions",
+    "email": "parker@digitalsolutions.com.br",
+    "source": "Website",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 89,
+    "name": "Quinn Rodrigues",
+    "company": "TechForward",
+    "email": "quinn@techforward.com",
+    "source": "Email Campaign",
+    "score": 92,
+    "status": "Qualified"
+  },
+  {
+    "id": 90,
+    "name": "Ruby Silva",
+    "company": "Innovation Labs",
+    "email": "ruby@innovationlabs.io",
+    "source": "Referral",
+    "score": 81,
+    "status": "New"
+  },
+  {
+    "id": 91,
+    "name": "Sebastian Costa",
+    "company": "StartupTech",
+    "email": "sebastian@startuptech.com.br",
+    "source": "LinkedIn",
+    "score": 85,
+    "status": "Contacted"
+  },
+  {
+    "id": 92,
+    "name": "Tessa Oliveira",
+    "company": "Digital Innovation",
+    "email": "tessa@digitalinnovation.com",
+    "source": "Website",
+    "score": 89,
+    "status": "Qualified"
+  },
+  {
+    "id": 93,
+    "name": "Uriah Santos",
+    "company": "TechSolutions",
+    "email": "uriah@techsolutions.io",
+    "source": "Email Campaign",
+    "score": 83,
+    "status": "New"
+  },
+  {
+    "id": 94,
+    "name": "Violet Lima",
+    "company": "Innovation Hub",
+    "email": "violet@innovationhub.com",
+    "source": "Referral",
+    "score": 87,
+    "status": "Contacted"
+  },
+  {
+    "id": 95,
+    "name": "Wyatt Alves",
+    "company": "TechStartup",
+    "email": "wyatt@techstartup.com.br",
+    "source": "LinkedIn",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 96,
+    "name": "Ximena Pereira",
+    "company": "Digital Ventures",
+    "email": "ximena@digitalventures.com",
+    "source": "Website",
+    "score": 77,
+    "status": "New"
+  },
+  {
+    "id": 97,
+    "name": "Yusuf Ferreira",
+    "company": "TechCorp",
+    "email": "yusuf@techcorp.io",
+    "source": "Email Campaign",
+    "score": 86,
+    "status": "Contacted"
+  },
+  {
+    "id": 98,
+    "name": "Zara Souza",
+    "company": "Innovation Tech",
+    "email": "zara@innovationtech.com",
+    "source": "Referral",
+    "score": 88,
+    "status": "Qualified"
+  },
+  {
+    "id": 99,
+    "name": "Aiden Martins",
+    "company": "StartupLab",
+    "email": "aiden@startuplab.com.br",
+    "source": "LinkedIn",
+    "score": 82,
+    "status": "New"
+  },
+  {
+    "id": 100,
+    "name": "Bella Rodrigues",
+    "company": "TechInnovation",
+    "email": "bella@techinnovation.io",
+    "source": "Website",
+    "score": 91,
+    "status": "Contacted"
+  }
+]
