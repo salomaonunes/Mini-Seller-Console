@@ -1,5 +1,7 @@
 # Mini Seller Console - Development Guide
 
+by Salomão Nunes - https://salomaonunes.com.br/en/
+
 This document describes the development process of the Mini Seller Console, a React application for lead triage and conversion to opportunities.
 
 ## 📋 Project Overview
