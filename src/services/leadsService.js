@@ -9,7 +9,7 @@ export const loadLeads = async () => {
     // Simulate network delay
     await delay(800);
 
-    const response = await fetch("/data/leads.json");
+    const response = await fetch("/src/assets/data/leads.json");
     if (!response.ok) {
       throw new Error("Failed to load leads");
     }
